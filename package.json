@@ -10,12 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@nextui-org/react": "^1.0.0-beta.12",
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.11.1",
-    "sass": "^1.62.1",
-    "scss": "^0.2.4"
+    "react-router-dom": "^6.11.2"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",

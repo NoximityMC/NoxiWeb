@@ -1,10 +1,8 @@
-
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import './style/App.css';
 import Home from './pages/Home';
-import Wiki from './pages/Wiki';
-import Team from './pages/Team';
 import Showcase from './pages/Showcase';
-import './style/App.scss';
+import About from './pages/About';
 
 function App({  })  {
 
@@ -13,9 +11,8 @@ function App({  })  {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/wiki" element={<Wiki />} />
-          <Route path="/team" element={<Team />} />
           <Route path="/showcase" element={<Showcase />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </BrowserRouter>
     </>
