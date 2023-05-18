@@ -1,8 +1,8 @@
 import { useEffect,useState } from "react";
 import '../style/NavBar.css';
 import discord from '../images/icons/discord.svg';
-import dropdown from '../images/icons/dropdown.svg';
 import icon from '../images/icons/NoximityLogo.svg';
+import error from '../images/icons/error.svg';
 
 
 export default function NavBar() {
@@ -19,11 +19,6 @@ export default function NavBar() {
       });
     }, []);
 
-    const [showMobileNav, setShowMobileNav] = useState(false);
-
-    function toggleMobileNav() {
-      setShowMobileNav(!showMobileNav);
-    }
 
 
 
@@ -42,39 +37,31 @@ export default function NavBar() {
           <li>
             <a href="/">Documentation</a>
           </li>
-
         </ul>
         <ul className="sub-nav">
           <li>
             <a href="/"><img src={discord} alt="discord" className="discord" /></a>
           </li>
         </ul>
-
-        <button className="dropdownbtn" onClick={toggleMobileNav}>
-        <div className="hamburger">
-          <img src={dropdown} alt="logo" className="logo" />
-        </div>
-        </button>
-        <div className="mobile-nav">
-          <ul>
-         
-            <a href="/"><img src={discord} alt="discord" className="discord" /></a>
-          
-          </ul>
-        {showMobileNav && (
-          <ul className="mobile-nav-list">
-            <li>
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="#">Showcase</a>
-            </li>
-            <li>
-              <a href="#">Documentation</a>
-            </li>
-          </ul>
-        )}
-        </div>
+    <div className="mobile-nav">
+    <li>
+      <img src={error} alt="logo" className="logo" />
+    </li>
+    <li>
+      <a href="/">Our site is currently not optimized for this resolution</a>
+    </li>
+    <li>
+      <a href="/">Please try again later</a>
+    </li>
+    <li>
+      <a href="/" id="gradient-text">Noximity Team </a>
+    </li>
+    <li>
+      <a href="/">
+        <img src={discord} alt="discord" className="discord" />
+      </a>
+    </li>
+  </div>
       </nav>
     )
 }

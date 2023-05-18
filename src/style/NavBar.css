@@ -9,6 +9,18 @@
   background-color: #0d0c0e;
 }
 
+a#gradient-text
+{
+    background: linear-gradient(to left, #722471, #3F3373);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5em;
+    font-style: bold;
+}
+
 .main-nav {
   display: flex;
   align-items: center;
@@ -127,7 +139,6 @@
   }
 }
 
-/* Add this media query to show the sub-nav on mobile devices */
 @media only screen and (max-width: 850px) {
   .main-nav {
     display: none;
@@ -137,100 +148,62 @@
     display: none;
   }
 
-  .navbar{
+  nav {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding: 10px 0;
+    background-color: #0d0c0e;
+    overflow-x: hidden;
+    height: 100vh;
   }
 
-  .hamburger{
+  .mobile-nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #0d0c0e;
   }
 
-  .hamburger img:hover{
-    scale: 1.1;
+  .mobile-nav li {
+    display: flex;
+    align-items: center;
+    background-color: #0d0c0e;
+    margin: 10px 0;
   }
 
-  .mobile-nav-list a{
+  .mobile-nav li img.logo {
+    width: auto;
+    height: 100px;
+    margin: 0 auto;
+    background-color: #0d0c0e;
+  }
+
+  .mobile-nav li img.discord {
+    width: auto;
+    height: 45px;
+    margin: 0 auto;
+    background-color: #0d0c0e;
+  }
+
+  .mobile-nav li a {
     color: #e4e4e4;
     text-decoration: none;
-    font-size: 18px;
-    font-weight: 50;
+    font-size: 16px;
+    font-weight: 550;
     transition: border-bottom 0.1s ease-in-out;
     display: flex;
     align-items: center;
     background-color: #0d0c0e;
-    text-transform: capitalize; /* add this line to remove the uppercase */
-  }
-  .mobile-nav-list a:hover{
-    border-bottom: 2px solid #722471;
-  }
-
-  .mobile-nav img{
-    width: auto;
-    height: 45px;
-    background-color: #0d0c0e;
-    user-select: none;
-  }
-
-  .mobile-nav ul{
-    background-color: #0d0c0e;
-  }
-
-  .mobile-nav ul a{
-    background-color: #0d0c0e;
-  }
-
-  .mobile-nav img:hover{
-    scale: 1.1;
-  }
-
-
-  .mobile-nav-list img{
-    width: auto;
-    height: 45px;
-    padding: 0 10px;
-    background-color: #0d0c0e;
-  }
-
-  .mobile-nav-list li{
-    display: flex;
-    margin: 0 10px;
-    background-color: #0d0c0e;
-  }
-
-  .mobile-nav-list{
-    background-color: #0d0c0e;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    align-items: right;
-  }
-
-  .dropdownbtn{
-    background-color: transparent;
-    border: none;
-    color: white;
-    padding: 10px auto;
+    text-transform: capitalize;
+    margin: 0 auto;
     text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 50;
-    margin: 0 10px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.1s ease-in-out;
-    rotate: 0deg;
   }
-  
-  .navbar{
-    padding: 15px 0;
-  }
-
-
-
-
-
 }
