@@ -2,6 +2,7 @@ import { useEffect,useState } from "react";
 import '../style/NavBar.css';
 import discord from '../images/icons/discord.svg';
 import dropdown from '../images/icons/dropdown.svg';
+import icon from '../images/icons/NoximityLogo.svg';
 
 
 export default function NavBar() {
@@ -30,7 +31,7 @@ export default function NavBar() {
         <nav className="navbar">
         <ul className="main-nav">
             <li>
-                <img src="https://i.imgur.com/ivU5qj6.png" alt="logo" className="logo" />
+                <img src={icon} alt="logo" className="logo" />
             </li>
           <li>
             <a href="/">Home</a>
