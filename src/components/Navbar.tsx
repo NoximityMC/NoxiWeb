@@ -1,6 +1,7 @@
-import { useEffect } from "react";
+import { useEffect,useState } from "react";
 import '../style/NavBar.css';
 import discord from '../images/icons/discord.svg';
+import dropdown from '../images/icons/dropdown.svg';
 
 
 export default function NavBar() {
@@ -16,6 +17,12 @@ export default function NavBar() {
         }
       });
     }, []);
+
+    const [showMobileNav, setShowMobileNav] = useState(false);
+
+    function toggleMobileNav() {
+      setShowMobileNav(!showMobileNav);
+    }
 
 
 
@@ -40,6 +47,30 @@ export default function NavBar() {
             <a href="/"><img src={discord} alt="discord" className="discord" /></a>
           </li>
         </ul>
+
+        <button className="dropdownbtn" onClick={toggleMobileNav}>
+        <div className="hamburger">
+          <img src={dropdown} alt="logo" className="logo" />
+        </div>
+        </button>
+        <div className="mobile-nav">
+        {showMobileNav && (
+          <ul className="mobile-nav-list">
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">Showcase</a>
+            </li>
+            <li>
+              <a href="#">Documentation</a>
+            </li>
+            <li>
+            <a href="/"><img src={discord} alt="discord" className="discord" /></a>
+          </li>
+          </ul>
+        )}
+        </div>
       </nav>
     )
 }

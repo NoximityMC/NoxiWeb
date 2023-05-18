@@ -1,70 +1,149 @@
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    background-color: #0d0c0e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #0d0c0e;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #0d0c0e;
+  padding: 5px 0;
+}
+
+.main-nav li {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.main-nav li img {
+  width: auto;
+  height: 45px;
+  padding: 0 10px;
+  background-color: #0d0c0e;
+}
+
+.main-nav li a {
+  color: #e4e4e4;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 50;
+  transition: border-bottom 0.1s ease-in-out;
+  display: flex;
+  align-items: center;
+  background-color: #0d0c0e;
+  text-transform: capitalize; /* add this line to remove the uppercase */
+}
+
+.main-nav li a:hover {
+  border-bottom: 2px solid #722471;
+}
+
+.sub-nav {
+  display: flex;
+  align-items: center;
+  width: auto;
+  height: auto;
+  list-style: none;
+  right: 0;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  border-radius: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  justify-content: center;
+}
+
+.sub-nav li {
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  background-color: #0d0c0e;
+}
+
+.sub-nav li a{
+  color: #e4e4e4;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 50;
+  transition: border-bottom 0.1s ease-in-out;
+  display: flex;
+  align-items: center;
+  background-color: #0d0c0e;
+  text-transform: capitalize; /* add this line to remove the uppercase */
+}
+
+.sub-nav li img {
+  width: auto;
+  height: 45px;
+  padding: 0 10px;
+  background-color: #0d0c0e;
+}
+.sub-nav li img:hover {
+  scale: 1.1;
+}
+.dropdownbtn {
+  background-color: #0d0c0e;
+  color: #e4e4e4;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize; /* add this line to remove the uppercase */
+}
+
+.hamburger {
+  cursor: pointer;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 35px;
+  height: 25px;
+  margin: 0 10px;
+  background-color: #0d0c0e;
+}
+
+.hamburger img {
+  background-color: #0d0c0e;
+}
+
+
+@media only screen and (min-width: 850px) {
+  .mobile-nav {
+    display: none;
   }
-  
+}
+
+/* Add this media query to show the sub-nav on mobile devices */
+@media only screen and (max-width: 850px) {
   .main-nav {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    background-color: #0d0c0e;
-    padding: 5px 0;
-  }
-  
-  .main-nav li {
-    display: flex;
-    align-items: center;
-    margin: 0 10px;
-  }
-  
-  .main-nav li img {
-    width: auto;
-    height: 45px;
-    padding: 0 10px;
-    background-color: #0d0c0e; /* add this line to set the background color of the logo */
-  }
-  
-  .main-nav li a {
-    color: #e4e4e4;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 50;
-    transition: border-bottom 0.1s ease-in-out;
-    display: flex;
-    align-items: center;
-    background-color: #0d0c0e; /* add this line to set the background color of the buttons */
-  }
-  
-  .main-nav li a:hover {
-    border-bottom: 2px solid #722471;
+    display: none;
   }
 
   .sub-nav {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    background-color: #0d0c0e;
-    padding: 5px 0;
-    background-color: #0d0c0e
+    display: none;
   }
 
-  .sub-nav li {
-    display: flex;
+  .navbar{
     align-items: center;
-    margin: 0 10px;
-    background-color: #0d0c0e
   }
 
-  .sub-nav li a {
+  .hamburger{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .mobile-nav-list a{
     color: #e4e4e4;
     text-decoration: none;
     font-size: 18px;
@@ -72,21 +151,58 @@
     transition: border-bottom 0.1s ease-in-out;
     display: flex;
     align-items: center;
-    background-color: #0d0c0e; /* add this line to set the background color of the buttons */
+    background-color: #0d0c0e;
+    text-transform: capitalize; /* add this line to remove the uppercase */
+  }
+  .mobile-nav-list a:hover{
+    border-bottom: 2px solid #722471;
   }
 
-  .sub-nav li a img {
+  .mobile-nav-list img{
     width: auto;
     height: 45px;
     padding: 0 10px;
-    background-color: #0d0c0e; /* add this line to set the background color of the logo */
+    background-color: #0d0c0e;
   }
 
-  .sub-nav li img:hover {
-    scale: 1.1;
+  .mobile-nav-list li{
+    display: flex;
+    margin: 0 10px;
+    background-color: #0d0c0e;
+  }
+
+  .mobile-nav-list{
+    background-color: #0d0c0e;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+  }
+
+  .dropdownbtn{
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 10px auto;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 50;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.1s ease-in-out;
+    rotate: 0deg;
   }
   
-  /* Show the toggle button on small screens */
-  @media only screen and (max-width: 850px) {
-  
+  .navbar{
+    padding: 15px 0;
+  }
+
+
+
+
+
 }
