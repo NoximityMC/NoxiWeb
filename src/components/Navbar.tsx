@@ -42,6 +42,7 @@ export default function NavBar() {
           <li>
             <a href="/">Documentation</a>
           </li>
+          
         </ul>
         <ul className="sub-nav">
           <li>
