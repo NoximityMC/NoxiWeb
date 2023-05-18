@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import '../style/Navbar.css';
+import '../style/NavBar.scss';
 
 
 export default function NavBar() {
