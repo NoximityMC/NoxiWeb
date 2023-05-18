@@ -147,6 +147,10 @@
     justify-content: center;
   }
 
+  .hamburger img:hover{
+    scale: 1.1;
+  }
+
   .mobile-nav-list a{
     color: #e4e4e4;
     text-decoration: none;
@@ -161,6 +165,26 @@
   .mobile-nav-list a:hover{
     border-bottom: 2px solid #722471;
   }
+
+  .mobile-nav img{
+    width: auto;
+    height: 45px;
+    background-color: #0d0c0e;
+    user-select: none;
+  }
+
+  .mobile-nav ul{
+    background-color: #0d0c0e;
+  }
+
+  .mobile-nav ul a{
+    background-color: #0d0c0e;
+  }
+
+  .mobile-nav img:hover{
+    scale: 1.1;
+  }
+
 
   .mobile-nav-list img{
     width: auto;

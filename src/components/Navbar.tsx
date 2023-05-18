@@ -42,7 +42,7 @@ export default function NavBar() {
           <li>
             <a href="/">Documentation</a>
           </li>
-          
+
         </ul>
         <ul className="sub-nav">
           <li>
@@ -56,6 +56,11 @@ export default function NavBar() {
         </div>
         </button>
         <div className="mobile-nav">
+          <ul>
+         
+            <a href="/"><img src={discord} alt="discord" className="discord" /></a>
+          
+          </ul>
         {showMobileNav && (
           <ul className="mobile-nav-list">
             <li>
@@ -67,9 +72,6 @@ export default function NavBar() {
             <li>
               <a href="#">Documentation</a>
             </li>
-            <li>
-            <a href="/"><img src={discord} alt="discord" className="discord" /></a>
-          </li>
           </ul>
         )}
         </div>
