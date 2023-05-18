@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import '../style/NavBar.css';
+import discord from '../images/icons/discord.svg';
 
 
 export default function NavBar() {
@@ -28,16 +29,15 @@ export default function NavBar() {
             <a href="/">Home</a>
           </li>
           <li>
-            <a href="/">About</a>
-          </li>
-          <li>
             <a href="/">Showcase</a>
           </li>
           <li>
-            <a href="/">Documentantion</a>
+            <a href="/">Documentation</a>
           </li>
+        </ul>
+        <ul className="sub-nav">
           <li>
-            <a href="/">Discord</a>
+            <a href="/"><img src={discord} alt="discord" className="discord" /></a>
           </li>
         </ul>
       </nav>

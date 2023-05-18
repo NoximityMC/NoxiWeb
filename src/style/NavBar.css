@@ -34,9 +34,8 @@
   .main-nav li a {
     color: #e4e4e4;
     text-decoration: none;
-    font-size: 19px;
-    font-weight: 600;
-    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 50;
     transition: border-bottom 0.1s ease-in-out;
     display: flex;
     align-items: center;
@@ -45,6 +44,46 @@
   
   .main-nav li a:hover {
     border-bottom: 2px solid #722471;
+  }
+
+  .sub-nav {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #0d0c0e;
+    padding: 5px 0;
+    background-color: #0d0c0e
+  }
+
+  .sub-nav li {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+    background-color: #0d0c0e
+  }
+
+  .sub-nav li a {
+    color: #e4e4e4;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 50;
+    transition: border-bottom 0.1s ease-in-out;
+    display: flex;
+    align-items: center;
+    background-color: #0d0c0e; /* add this line to set the background color of the buttons */
+  }
+
+  .sub-nav li a img {
+    width: auto;
+    height: 45px;
+    padding: 0 10px;
+    background-color: #0d0c0e; /* add this line to set the background color of the logo */
+  }
+
+  .sub-nav li img:hover {
+    scale: 1.1;
   }
   
   /* Show the toggle button on small screens */
