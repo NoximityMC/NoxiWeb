@@ -1,4 +1,4 @@
-import { useEffect,useState } from "react";
+import { useEffect } from "react";
 import '../style/NavBar.css';
 import discord from '../images/icons/discord.svg';
 import icon from '../images/icons/NoximityLogo.svg';
