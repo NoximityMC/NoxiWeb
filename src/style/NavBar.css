@@ -1,0 +1,53 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #0d0c0e;
+  }
+  
+  .main-nav {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #0d0c0e;
+    padding: 5px 0;
+  }
+  
+  .main-nav li {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+  }
+  
+  .main-nav li img {
+    width: auto;
+    height: 45px;
+    padding: 0 10px;
+    background-color: #0d0c0e; /* add this line to set the background color of the logo */
+  }
+  
+  .main-nav li a {
+    color: #e4e4e4;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: border-bottom 0.1s ease-in-out;
+    display: flex;
+    align-items: center;
+    background-color: #0d0c0e; /* add this line to set the background color of the buttons */
+  }
+  
+  .main-nav li a:hover {
+    border-bottom: 2px solid #722471;
+  }
+  
+  /* Show the toggle button on small screens */
+  @media only screen and (max-width: 850px) {
+  
+}
