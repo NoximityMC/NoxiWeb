@@ -1,0 +1,36 @@
+#gradient-text
+{
+    background: linear-gradient(to left, #722471, #3F3373);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    font-size: 4em;
+    font-style: bold;
+}
+
+.homeheader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45vh;
+    background-color: #121113;
+}
+
+.oneliner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #121113;
+}
+
+.oneliner h2{
+    color: #d1d1d1;
+    font-size: 4em;
+    font-weight: 500;
+    padding-right: 15px;
+    font-family: 'Inter', sans-serif;
+    font-style: bold;
+    user-select: none;
+}
