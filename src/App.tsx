@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './style/App.css';
 import Home from './pages/Home';
 import Showcase from './pages/Showcase';
-import About from './pages/About';
+import Documentation from './pages/Documentation';
 
 function App({  })  {
 
@@ -12,7 +12,7 @@ function App({  })  {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/showcase" element={<Showcase />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/documentation" element={<Documentation />} />
         </Routes>
       </BrowserRouter>
     </>

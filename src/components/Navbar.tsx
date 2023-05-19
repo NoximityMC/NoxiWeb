@@ -7,10 +7,12 @@ import dropdown from '../images/icons/dropdown.svg';
 
 
 export default function NavBar() {
+
+  const [showMobileNav, setShowMobileNav] = useState(false);
   
     useEffect(() => {
       const currentPath = window.location.pathname;
-      const links = document.querySelectorAll('.navbar-component a');
+      const links = document.querySelectorAll('.navbar-component-center ul li a');
       links.forEach(link => {
         if (link.getAttribute('href') === currentPath) {
           link.classList.add('focused');
@@ -19,14 +21,25 @@ export default function NavBar() {
         }
       });
     }, []);
-    
 
-    const [showMobileNav, setShowMobileNav] = useState(false);
+    useEffect(() => {
+      const currentPath = window.location.pathname;
+      const links = document.querySelectorAll('.mobile-nav-list li a');
+      links.forEach(link => {
+        if (link.getAttribute('href') === currentPath) {
+          link.classList.add('focused');
+        } else {
+          link.classList.remove('focused');
+        }
+      });
+    }, []);
 
 
     function toggleMobileNav() {
       setShowMobileNav(!showMobileNav);
     }
+
+    
 
 
 
@@ -45,9 +58,9 @@ export default function NavBar() {
                 </div>
                 <div className="navbar-component-center">
                     <ul>
-                        <li><a href="/about">Home</a></li>
-                        <li><a href="/projects">Showcase</a></li>
-                        <li><a href="/contact">Documentation</a></li>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/showcase">Showcase</a></li>
+                        <li><a href="/documentation">Documentation</a></li>
                     </ul>
                 </div>
                 <div className="navbar-component-right">
@@ -69,10 +82,10 @@ export default function NavBar() {
                 {showMobileNav && (
                   <ul className="mobile-nav-list">
                     <li>
-                      <a href="#">Showcase</a>
+                      <a href="/showcase">Showcase</a>
                     </li>
                     <li>
-                      <a href="#">Documentation</a>
+                      <a href="/documentation">Documentation</a>
                     </li>
                   </ul>
                 )}

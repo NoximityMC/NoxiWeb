@@ -1,6 +1,6 @@
 .navbar {
     background-color: #1a1a1a;
-    border-bottom: 1px solid #333;
+    border-bottom: 2px solid #252323;
     height: 50px;
     width: 100%;
     position: fixed;
@@ -84,7 +84,14 @@ img#discord:hover{
 .navbar-component-center ul li a:hover {
     border-bottom: #fff 2px solid;
     scale: 1.1;
+    transition: all 0.3s ease;
 
+}
+
+a.focused{
+  border-bottom: #fff 2px solid;
+  scale: 1.1;
+  transition: all 0.3s ease;
 }
 
 
