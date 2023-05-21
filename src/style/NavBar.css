@@ -39,10 +39,30 @@ img#logo:hover{
     height: 100%;
 }
 
+.navbar-component-right li{
+    list-style: none;
+    height: 100%;
+}
+
+.navbar-component-right li a{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 5px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+
 img#discord{
     height: 40px;
     width: 40px;
     margin-right: 10px;
+    pointer-events: painted;
 }
 
 img#discord:hover{
@@ -113,6 +133,7 @@ a.focused{
     align-items: center;
     height: 100%;
     width: 100%;
+    background-color: #121113;
   }
 
   .dropdownbtn{
@@ -126,8 +147,14 @@ a.focused{
     font-weight: 500;
     transition: all 0.3s ease;
     border: none;
-    background-color: #1a1a1a;
+    background-color: #121113;
     cursor: pointer;
+  }
+
+  .navbar-component-right-mobile {
+    display: flex;
+    align-items: center;
+    height: 100%;
   }
 
   .hamburger{
