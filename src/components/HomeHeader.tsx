@@ -1,13 +1,19 @@
 import '../style/HomeHeader.css';
+import banner from '../images/images/zombisquare.svg';
 
 export default function Homeheader() {
     return (
-    <div className="homeheader">
-        <div className='oneliner'>
-        <h2>Welcome to    </h2>
-        <h2 id="gradient-text">Noximity</h2>
-    </div>
-
+    <div className="homebanner">
+        <div className="bannerright">
+            <img src={banner} alt="banner" />
+        </div>
+        <div className="bannerleft">
+            <h1>Noximity</h1>
+            <p>
+            Open-source Minecraft plugin development team creating innovative plugins for enhanced gameplay and community engagement.
+            </p>
+            <button>Explore</button>
+        </div>
     </div>
     )
 }
