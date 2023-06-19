@@ -1,6 +1,6 @@
 .navbar {
-    background-color: #1a1a1a;
-    border-bottom: 2px solid #252323;
+    background-color: #040910;
+    border-bottom: 2px solid #040910;
     height: 50px;
     width: 100%;
     position: fixed;
@@ -49,7 +49,7 @@ img#logo:hover{
     align-items: center;
     height: 100%;
     padding: 0 5px;
-    color: #fff;
+    color: #dae4f6;
     text-decoration: none;
     font-size: 16px;
     font-weight: 500;
@@ -94,7 +94,7 @@ img#discord:hover{
     align-items: center;
     height: 100%;
     padding: 0 20px;
-    color: #fff;
+    color: #dae4f6;
     text-decoration: none;
     font-size: 16px;
     font-weight: 500;
@@ -102,16 +102,13 @@ img#discord:hover{
 }
 
 .navbar-component-center ul li a:hover {
-    border-bottom: #fff 2px solid;
-    scale: 1.1;
-    transition: all 0.3s ease;
-
+    color: #710ea0;
+    cursor: pointer;
 }
 
 a.focused{
-  border-bottom: #fff 2px solid;
-  scale: 1.1;
-  transition: all 0.3s ease;
+    border-bottom: #710ea0 2px solid;
+    transition: all 0.3s ease;
 }
 
 
@@ -133,7 +130,7 @@ a.focused{
     align-items: center;
     height: 100%;
     width: 100%;
-    background-color: #121113;
+    background-color: #040910;
   }
 
   .dropdownbtn{
@@ -141,13 +138,13 @@ a.focused{
     align-items: center;
     height: 100%;
 
-    color: #fff;
+    color: #dae4f6;
     text-decoration: none;
     font-size: 16px;
     font-weight: 500;
     transition: all 0.3s ease;
     border: none;
-    background-color: #121113;
+    background-color: #040910;
     cursor: pointer;
   }
 
@@ -197,7 +194,7 @@ a.focused{
     align-items: center;
     height: 100%;
     padding: 0 20px;
-    color: #fff;
+    color: #dae4f6;
     text-decoration: none;
     font-size: 16px;
     font-weight: 500;
@@ -205,7 +202,7 @@ a.focused{
   }
 
   .navbar-component-center-mobile ul li a:hover {
-    border-bottom: #fff 2px solid;
+    border-bottom: #dae4f6 2px solid;
     scale: 1.1;
   }
 

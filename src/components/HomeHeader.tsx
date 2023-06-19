@@ -1,5 +1,5 @@
 import '../style/HomeHeader.css';
-import banner from '../images/images/zombisquare.svg';
+import banner from '../images/images/softwareengineer.svg';
 
 export default function Homeheader() {
     return (
