@@ -9,7 +9,7 @@
     box-sizing: border-box;
     scrollbar-color: #722471 #040910;
     scrollbar-width: thin;
-
+    user-select: none;
 }
 
 

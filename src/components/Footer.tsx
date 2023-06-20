@@ -1,18 +1,19 @@
-import '../style/HomeHeader.css';
-import banner from '../images/images/softwareengineer.svg';
+import '../style/Footer.css';
+import fullLogo from '../images/icons/logofull.svg';
 
 export default function Homeheader() {
     return (
-    <div className="homebanner">
-        <div className="bannerright">
-            <img src={banner} alt="banner" />
-        </div>
-        <div className="bannerleft">
-            <h1>Noximity</h1>
-            <p>
-            Open-source Minecraft plugin development team creating innovative plugins for enhanced gameplay and community engagement.
-            </p>
-            <button>Explore</button>
+    <div className="footer">
+        <div className="footer-content">
+            <div className='footer-content-left'>
+                <img src={fullLogo} alt="logo" className="footer-logo" />
+            </div>
+            <div className='footer-content-center'>
+                <p className="footer-text">© 2023, The Noximity Team</p>
+            </div>
+            <div className='footer-content-right'>
+                <p className="footer-text">Made with ❤️ by <a href="">@Noximity</a></p>
+            </div>
         </div>
     </div>
     )
