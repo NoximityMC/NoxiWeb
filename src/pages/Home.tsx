@@ -1,5 +1,6 @@
 import Homeheader from "../components/HomeHeader"
 import NavBar from "../components/Navbar"
+import SupportedPlatforms from "../components/SupportedPlatforms"
 
 export default function Home(){
 
@@ -7,6 +8,7 @@ export default function Home(){
         <>
         <NavBar />
         <Homeheader />
+        <SupportedPlatforms />
         </>
     )
 }

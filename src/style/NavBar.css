@@ -3,9 +3,11 @@
     border-bottom: 2px solid #040910;
     height: 50px;
     width: 100%;
-    position: fixed;
+    position: relative;
+    display: flexbox;
+    overflow: hidden;
     top: 0;
-    z-index: 100;
+    z-index: 10000;
 }
 
 .desktop-nav {
