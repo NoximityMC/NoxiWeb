@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+//Site Settings
+$site-margin: 0;
+$site-padding: 0;
+$site-scroll-behavior: smooth;
+$site-box-sizing: border-box;
+$site-scrollbar-color: #722471 #040910;
+$site-scrollbar-width: thin;
+
+//Colors
+$title-color: #722471;
+$text-color: #dae4f6;
+$background-color: #040910;
+$primary-button-color: #722471;
+$secondary-button-color: #210b2d;
+$accent-color: #710ea0;
+
+//Font
+$primary-font-family: 'Poppins', sans-serif;
+$secondary-font-family: 'Inter', sans-serif;
+
+//Text
+$text-size: 1.5rem;
+$text-weight: 400;
+$text-width: 80%;
+$text-line-height: 1.5;
+$text-align: center;
+$text-margin-bottom: 1rem;
+$text-decoration: none;
+$text-user-select: none;
+
+//Animations
+$animation-transition: all 0.3s ease;
+
+//Navbar
+$navbar-fontsize: 16px;
+$navbar-weight: 500;
+
+//Titles
+$title-size: 4rem;
+$title-decoration: none;
+$title-weight: 700;
+$title-font-style: bold;
+$title-margin-bottom: 0.5rem;
+$title-user-select: none;
+
+//Logo sizes
+
+$logo-size-small: 40px;
+$logo-size-medium: 60px;
+$logo-size-large: 80px;
+$logo-margin: 10px;
+
+//Images
+$image-scale: 1.1;
+
+//Sizes
+$fullsize: 100%;
+
+//Components
+$component-display: flex;
+$component-align-items: center;

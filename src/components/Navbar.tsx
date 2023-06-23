@@ -1,5 +1,5 @@
 import { useEffect,useState  } from "react";
-import '../style/NavBar.css';
+import '../style/NavBar.scss';
 import discord from '../images/icons/discord.svg';
 import icon from '../images/icons/NoximityLogo.svg';
 import dropdown from '../images/icons/dropdown.svg';

@@ -1,0 +1,11 @@
+@import 'variables';
+
+*{
+    margin: $site-margin;
+    padding: $site-padding;
+    scroll-behavior: $site-scroll-behavior;
+    box-sizing: $site-box-sizing;
+    scrollbar-color: $site-scrollbar-color;
+    scrollbar-width: $site-scrollbar-width;
+    font-family: $secondary-font-family;
+}

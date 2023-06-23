@@ -1,0 +1,99 @@
+@import 'variables';
+
+.navbar{
+    background-color: $background-color;
+    border-bottom: 2px solid #040910;;
+    height: 50px;
+    width: 100%;
+    position: relative;
+    display: flexbox;
+    overflow: hidden;
+    top: 0;
+    z-index: 10000;
+    .desktop-nav{
+        display: $component-display;
+        justify-content: space-between;
+        align-items: center;
+        height: $fullsize;
+        width: $fullsize;
+        .navbar-component-left{
+            display: $component-display;
+            align-items: $component-align-items;
+            height: $fullsize;
+            img{
+                height: $logo-size-small;
+                width: $logo-size-small;
+                margin-left: $logo-margin;
+            }
+            :hover{
+                cursor: pointer;
+            }
+        }
+        .navbar-component-center{
+            display: $component-display;
+            align-items: $component-align-items;
+            height: $fullsize;
+            ul{
+                display: $component-display;
+                align-items: $component-align-items;
+                height: $fullsize;
+                li{
+                    list-style: none;
+                    height: $fullsize;
+                    a{
+                        display: $component-display;
+                        align-items: $component-align-items;
+                        height: $fullsize;
+                        padding: 0 20px;
+                        text-decoration: none;
+                        color: $text-color;
+                        font-family: $primary-font-family;
+                        font-size: $navbar-fontsize;
+                        font-weight: $navbar-weight;
+                        transition: $animation-transition;
+                    }
+                    a:hover{
+                        color: $accent-color;
+                        cursor: pointer;
+                    }
+                    a.focused{
+                        border-bottom: #710ea0 2px solid;
+                        transition: $animation-transition;
+                    }
+                }
+            }
+
+        }
+        .navbar-component-right{
+            display: $component-display;
+            align-items: $component-align-items;
+            height: $fullsize;
+            li{
+                list-style: none;
+                height: $fullsize;
+                a{
+                    display: $component-display;
+                    align-items: $component-align-items;
+                    height: $fullsize;
+                    padding: 0 5px;
+                    text-decoration: $text-decoration;
+                    color: $text-color;
+                    font-family: $primary-font-family;
+                    font-size: $text-size;
+                    font-weight: $text-weight;
+                    transition: $animation-transition;
+                    img{
+                        height: $logo-size-small;
+                        width: $logo-size-small;
+                        margin-right: $logo-margin;
+                    }
+                    :hover{
+                        cursor: pointer;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
