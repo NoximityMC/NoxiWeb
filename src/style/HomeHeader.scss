@@ -1,0 +1,123 @@
+@import 'variables';
+
+.homebanner{
+    display: $component-display;
+    align-items: $component-align-items;
+    justify-content: $component-align-items;
+    background-color: $background-color;
+    color: $text-color;
+    font-family: $secondary-font-family;
+    width: $fullsize;
+    height: 100vh;
+    .bannerright{
+        display: $component-display;
+        align-items: $component-align-items;
+        justify-content: $component-align-items;
+        flex-direction: column;
+        width: 50%;
+        height: $fullsize;
+    }
+
+    .bannerleft{
+        display: $component-display;
+        align-items: $component-align-items;
+        justify-content: $component-align-items;
+        flex-direction: column;
+        width: 50%;
+        height: $fullsize;
+        h1{
+            font-size: $title-size;
+            color: $title-color;
+            font-weight: $title-weight;
+            font-style: $title-font-style;
+            margin-bottom: $title-margin-bottom;
+            text-decoration: $title-decoration;
+            user-select: $title-user-select;
+        }
+        p{
+            font-size: $text-size-large;
+            font-weight: $text-weight;
+            margin-bottom: $text-margin-bottom;
+            text-decoration: $text-decoration;
+            user-select: $text-user-select;
+        }
+        button{
+            font-size: $text-size-medium;
+            font-weight: $text-weight;
+            margin-bottom: $text-margin-bottom;
+            text-decoration: $text-decoration;
+            user-select: $text-user-select;
+            border: $button-border;
+            border-radius: $button-border-radius;
+            padding: $button-padding;
+            background-color: $accent-color;
+            color: $button-text-color;
+            outline: $button-outline;
+            cursor: $button-cursor;
+            &:hover{
+                scale: $button-scale;
+                color: $button-text-color;
+                box-shadow: $button-hover-box-shadow;
+                transition: $button-transition;
+                  
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 850px) {
+
+    .homebanner{
+        flex-direction: column;
+        align-items: $component-align-items;
+        .bannerright{
+            width: 80%;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .bannerleft{
+            width: 80%;
+            height: 100%;
+            h1{
+                font-size: $text-size-large;
+            }
+            p{
+                font-size: $text-size-medium;
+            }
+            button{
+                font-size: $text-size-small;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1060px) {
+    .homebanner{
+        flex-direction: column;
+        align-items: $component-align-items;
+        .bannerright{
+            width: 80%;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .bannerleft{
+            width: 80%;
+            height: 100%;
+            h1{
+                font-size: $text-size-large;
+            }
+            p{
+                font-size: $text-size-medium;
+            }
+            button{
+                font-size: $text-size-small;
+            }
+        }
+    }
+    
+
+}

@@ -1,0 +1,108 @@
+
+@import 'variables';
+
+.supportedplatforms{
+    width: $fullsize;
+    height: $fullsize;
+    display: $component-display;
+    align-items: $component-align-items;
+    justify-content: $component-align-items;
+    flex-direction: row;
+    background-color: $background-color;
+    .centerlizer{
+        display: $component-display;
+        align-items: $component-align-items;
+        justify-content: $component-align-items;
+        flex-direction: column;
+        width: 80%;
+        height: $fullsize;
+        .supportedplatforms{
+            display: $component-display;
+            align-items: $component-align-items;
+            justify-content: $component-align-items;
+            flex-direction: column;
+            width: 100%;
+            height: $fullsize;
+            h1{
+                font-size: $title-size;
+                color: $title-color;
+                font-weight: $title-weight;
+                font-style: $title-font-style;
+                margin-bottom: $title-margin-bottom;
+                text-decoration: $title-decoration;
+                user-select: $title-user-select;
+            }
+            p{
+                font-size: $text-size-large;
+                font-weight: $text-weight;
+                margin-bottom: $text-margin-bottom;
+                text-decoration: $text-decoration;
+                user-select: $text-user-select;
+                color: $text-color;
+                padding-bottom: 25px;
+            }
+        }
+        .supportedplatformsimage{
+            display: $component-display;
+            align-items: $component-align-items;
+            justify-content: $component-align-items;
+            flex-direction: row;
+            width: 100%;
+            height: $fullsize;
+            img{
+                width: 90px;
+                height: $fullsize;
+                margin-right: 25px;
+                &:hover{
+                    cursor: pointer;
+                    scale: 1.1;
+                    transition: 5ms;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .supportedplatforms{
+        flex-direction: column;
+        align-items: $component-align-items;
+        .centerlizer{
+            width: 100%;
+            .supportedplatforms{
+                width: 80%;
+                h1{
+                    font-size: $text-size-large;
+                    color: $title-color;
+                    font-weight: $title-weight;
+                    font-style: $title-font-style;
+                    margin-bottom: $title-margin-bottom;
+                    text-decoration: $title-decoration;
+                    user-select: $title-user-select;
+                }
+                p{
+                    font-size: $text-size-medium;
+                    font-weight: $text-weight;
+                    margin-bottom: $text-margin-bottom;
+                    text-decoration: $text-decoration;
+                    user-select: $text-user-select;
+                    color: $text-color;
+                    padding-bottom: 5px;
+                }
+            }
+            .supportedplatformsimage{
+                width: 100%;
+                img{
+                    width: 60px;
+                    height: $fullsize;
+                    margin-right: 25px;
+                    &:hover{
+                        cursor: pointer;
+                        scale: 1.1;
+                        transition: 5ms;
+                    }
+                }
+            }
+        }
+    }
+}

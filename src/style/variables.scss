@@ -30,6 +30,9 @@ $text-align: center;
 $text-margin-bottom: 1rem;
 $text-decoration: none;
 $text-user-select: none;
+$text-size-small: 1rem;
+$text-size-medium: 1.5rem;
+$text-size-large: 2rem;
 
 //Animations
 $animation-transition: all 0.3s ease;
@@ -45,6 +48,27 @@ $title-weight: 700;
 $title-font-style: bold;
 $title-margin-bottom: 0.5rem;
 $title-user-select: none;
+
+//Buttons
+$button-size: 2rem;
+$button-weight: 500;
+$button-font-style: bold;
+$button-decoration: none;
+$button-margin: 1rem;
+$button-padding: 0.9rem 1.5rem;
+$button-border-radius: 9px;
+$button-border: none;
+$button-outline: none;
+$button-cursor: pointer;
+$button-user-select: none;
+$button-transition: all 0.3s ease;
+$button-text-color: $text-color;
+$button-hover-color: $accent-color;
+$button-hover-background-color: $accent-color;
+$button-hover-border: none;
+$button-hover-outline: none;
+$button-hover-box-shadow: 0 0 10px $accent-color;
+$button-scale: 1.05;
 
 //Logo sizes
 
@@ -62,3 +86,5 @@ $fullsize: 100%;
 //Components
 $component-display: flex;
 $component-align-items: center;
+
+

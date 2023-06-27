@@ -1,4 +1,4 @@
-import '../style/Footer.css';
+import '../style/Footer.scss';
 import fullLogo from '../images/icons/logofull.svg';
 
 export default function Homeheader() {

@@ -1,0 +1,87 @@
+@import 'variables';
+
+.footer{
+    display: $component-display;
+    align-items: $component-align-items;
+    justify-content: $component-align-items;
+    background-color: $background-color;
+    color: $text-color;
+    font-family: $secondary-font-family;
+    font-weight: $text-weight;
+    width: $fullsize;
+    padding-top: 150px;
+    .footer-content{
+        display: $component-display;
+        align-items: $component-align-items;
+        justify-content: $component-align-items;
+        flex-direction: row;
+        width: 80%;
+        height: $fullsize;
+
+        .footer-content-left{
+            display: $component-display;
+            align-items: $component-align-items;
+            justify-content: $component-align-items;
+            flex-direction: column;
+            width: $fullsize;
+            height: $fullsize;
+        }
+        .footer-content-right{
+            display: $component-display;
+            align-items: $component-align-items;
+            justify-content: $component-align-items;
+            flex-direction: column;
+            width: $fullsize;
+            height: $fullsize;
+            .footer-text{
+                margin-bottom: 1rem;
+                color: $text-color;
+                width: 80%;
+            }
+        }
+
+        .footer-content-center{
+            display: $component-display;
+            align-items: $component-align-items;
+            justify-content: $component-align-items;
+            flex-direction: column;
+            width: $fullsize;
+            height: $fullsize;
+        }
+    }
+}
+
+.footer-text{
+    margin-bottom: 1rem;
+    color: $text-color;
+    width: 80%;
+    user-select: $text-user-select;
+}
+
+.footer-logo{
+    width: 150px;
+    height: auto;
+    top: 0;
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 850px) {
+    .footer{
+        padding-top: 50px;
+        .footer-logo{
+            width: 100px;
+            height: auto;
+            top: 0;
+            margin-bottom: 1rem;
+        }
+        .footer-text{
+            margin-bottom: 1rem;
+            color: $text-color;
+            width: 100%;
+            user-select: $text-user-select;
+            font-size: $text-size-small;
+        }
+
+    }
+    
+}

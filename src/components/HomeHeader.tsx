@@ -1,4 +1,4 @@
-import '../style/HomeHeader.css';
+import '../style/HomeHeader.scss';
 import banner from '../images/images/softwareengineer.svg';
 
 export default function Homeheader() {
